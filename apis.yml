@@ -1,7 +1,27 @@
 aid: dashmobile
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dashmobile.png
 name: dashmobile
-description: dashmobile is a company surfaced as a portfolio company of slow-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'dashmobile (listed by Slow Ventures as "Dash Labs") was surfaced as a portfolio
+  company of slow-ventures and added to the API Evangelist network as a stub for enrichment.
+  Enrichment on 2026-07-20 found no operating public surface: the listed domain dashmobile.co
+  has no DNS records at all (no A record, no NS delegation) and returns no HTTP response,
+  and the Internet Archive holds exactly one capture of the domain (2022-05-24), which
+  was itself a .CO registry domain-expired parking page rather than company content. The
+  company therefore has no website, no developer portal, no documentation, no API, and no
+  discoverable artifacts of any kind. This profile is retained as a verified-defunct
+  portfolio lead and is not a candidate for further enrichment unless the company
+  relaunches on a new domain.'
 url: https://raw.githubusercontent.com/api-evangelist/dashmobile/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +29,30 @@ x-backed-by:
 - slow-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-evidence:
+  domain: dashmobile.co
+  dns_a: none
+  dns_ns: none
+  http_status: '000'
+  http_note: connection failed, host does not resolve
+  archive_snapshots: 1
+  archive_last: '2022-05-24'
+  archive_note: only capture is a .CO registry domain-expired parking page
+  portfolio_listing_name: Dash Labs
+  portfolio_source: https://slow.co/portfolio/
+  probed: '2026-07-20'
+x-api-surface: none
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Portfolio Company
+- Venture Backed
+- Slow Ventures
+- Defunct
+- Unreachable
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +62,10 @@ maintainers:
 common:
 - type: Website
   url: https://dashmobile.co
+  x-status: dead
+  x-probed: '2026-07-20'
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
