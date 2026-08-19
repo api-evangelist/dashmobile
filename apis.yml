@@ -43,7 +43,7 @@ x-status-evidence:
   portfolio_source: https://slow.co/portfolio/
   probed: '2026-07-20'
 x-api-surface: none
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
